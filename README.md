@@ -1,8 +1,10 @@
-### Number Guessing Game in Go
+# Number Guessing Game in Go
 
-Just a simple guessing game written in Go
+_Just a simple guessing game written in Go_
 
-# Requirements
+---
+
+### Requirements
 
 It is a CLI-based game, so you need to use the command line to interact with the game. The game should work as follows:
 
