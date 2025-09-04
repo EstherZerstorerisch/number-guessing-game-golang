@@ -53,16 +53,19 @@ func GuessNumber() (guess uint8) {
 }
 
 func CompareAnswer(userInput, answer uint8, chances *uint8) bool {
+	var attempts uint8
 	if userInput == answer {
-		fmt.Printf("Congratulations! You guessed the correct number in %d attempts.\n", *chances)
+		fmt.Printf("Congratulations! You guessed the correct number in %d attempts.\n", attempts)
 		return true
 	} else if userInput > answer {
 		fmt.Printf("Incorrect! The number is less than %d.\n", userInput)
 		*chances --
+		attempts ++
 		return false
 	} else {
 		fmt.Printf("Incorrect! The number is greater than %d.\n", userInput)
 		*chances --
+		attempts ++
 		return false
 	}
 }
